@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateTaskList() {
         toDoList.innerHTML = "";
         for (let i = 0; i < todos.length; i++) {
-            const task = todos[i];
+            const todo = todos[i];
             const li = document.createElement("li");
             li.innerHTML = `
-                <input type="checkbox" class="toggle" ${task.completed ? 'checked' : ''}>
-                <span class="task-text ${task.completed ? 'completed' : ''}">
-                    ${task.text}
+                <input type="checkbox" class="toggle" ${todo.completed ? 'checked' : ''}>
+                <span class="task-text ${todo.completed ? 'completed' : ''}">
+                    ${todo.text}
                 </span>
                 <button class="delete">Видалити</button>
             `;
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             toggleCheckbox.addEventListener("change", function () {
-                task.completed = toggleCheckbox.checked;
+                todo.completed = toggleCheckbox.checked;
                 updateTaskList();
                 saveTasksToLocalStorage();
             });
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function saveTasksToLocalStorage() {
-        localStorage.setItem("tasks", JSON.stringify(todos));
+        localStorage.setItem("todos", JSON.stringify(todos));
     }
 
     updateTaskList();
