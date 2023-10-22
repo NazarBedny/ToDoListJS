@@ -1,0 +1,29 @@
+# ToDo List
+
+A simple ToDo List created using HTML, CSS, and JavaScript. This application allows users to add, delete, and mark tasks as completed.
+
+## Usage
+
+1. Enter the task text in the input field.
+2. Click the "Add" button to add the task to the list.
+3. You can mark tasks as completed by clicking on the checkbox next to them. Completed tasks will have text with a strikethrough.
+4. To delete a task, click the "Delete" button next to it.
+
+## Local Storage
+
+This ToDo List stores your tasks in the browser's local storage, so they remain available after page reloads.
+
+## Project Development
+
+The project can be improved or extended in the following ways:
+
+- Adding the ability to edit tasks.
+- Sorting tasks by different criteria (e.g., date or priority).
+- Adding categories or labels to tasks.
+- Enhancing the design and styling.
+
+## Author
+
+The author of this project: [Nazar](https://github.com/NazarBedny).
+
+If you have any questions or suggestions, please feel free to get in touch.
